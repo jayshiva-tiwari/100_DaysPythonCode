@@ -1,3 +1,5 @@
+# Day 03 with programming paglu 🎀
+
 # operators
 #let's create a calculator
 # using if-elif-else and operators
