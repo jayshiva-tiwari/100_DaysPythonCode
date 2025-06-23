@@ -11,5 +11,3 @@ joke = response.json()
 print("Here's a joke for you 🤣:")
 print(joke["setup"])
 print(joke["punchline"])
-
-# Next app with APIs
