@@ -6,25 +6,33 @@
 # Filter : It filters items in a list based on a condition.
 # Reduce : It reduces a list to a single value by applying a function cumulatively.
 
-add = lambda x, y: x + y
-print(add(2, 3)) 
+# the normal function
+# def add(x,y):
+#     result = x + y
+#     print(result)
+
+# add(2, 3)
+
+# the lambda 
+# add = lambda x, y: x + y
+# print(add(2, 3)) 
 
 # Map function example
-nums = [1, 2, 3, 4, 5]
-squares = list(map(lambda x: x**2, nums))
-print(squares)  
+# nums = [1, 2, 3, 4, 5]
+# squares = list(map(lambda x: x**2, nums))
+# print(squares)
 
 # Filter function example
-nums = [1, 2, 3, 4, 5, 6]
-even = list(filter(lambda x: x % 2 == 0, nums))
-print(even) 
+# nums = [1, 2, 3, 4, 5, 6]
+# even = list(filter(lambda x: x % 2 == 0, nums))
+# print(even)
 
 # Reduce function example
 from functools import reduce
 
 nums = [1, 2, 3, 4, 5]
 total = reduce(lambda x, y: x + y, nums)
-print(total)  
+print(total)
 
 
 
