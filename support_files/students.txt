@@ -1,0 +1,5 @@
+Shiva,78
+Radha,64
+Mohan,33
+Sita,90
+Aman,49
