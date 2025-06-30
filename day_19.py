@@ -71,3 +71,18 @@ acc.withdraw(1500)
 
 
 # Try creating a Book or Mobile class on your own. Include 2–3 attributes and 1 method that prints their details.
+
+class Book:
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+
+    def review(self):
+        print(f"the {self.title} is wrote by {self.author} in {self.year} ")
+
+book1 = Book("python programming", "john Doe", 2021)
+book2 = Book("ramayana", "rishi valmeeki", "100 BCE")
+
+book1.review()
+book2.review()
