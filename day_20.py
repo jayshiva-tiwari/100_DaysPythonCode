@@ -3,21 +3,21 @@
 # Methods, Attributes, print() vs return() in Object-Oriented Programming.
 
 # method with print
-# class Calculator:
-#     def add(self, x, y):
-#         print("Result:", x + y)
+class Calculator:
+    def add(self, x, y):
+        print("Result:", x + y)
 
-# calc = Calculator()
-# calc.add(5, 3)  # Output: Result: 8
+calc = Calculator()
+calc.add(5, 3)  # Output: Result: 8
 
 # method with return
-# class Calculator:
-#     def add(self, x, y):
-#         return x + y
+class Calculator:
+    def add(self, x, y):
+        return x + y
 
-# calc = Calculator()
-# result = calc.add(5, 3)
-# print("Result:", result)     # Output: Result: 8
+calc = Calculator()
+result = calc.add(5, 3)
+print("Result:", result)     # Output: Result: 8
 
 
 # practices 
