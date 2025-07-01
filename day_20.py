@@ -60,3 +60,53 @@ class Circle:
 
 circle = Circle(5)
 circle.show_info()
+
+
+# @classmethod, @staticmethod, and understanding Print vs Return in methods 
+
+# @classmethod
+# Used when a method needs access to the class itself (not the object), It takes cls instead of self.
+
+
+class School:
+    school_name = "Greenwood High"
+
+    def __init__(self, student_name):
+        self.student_name = student_name
+
+    @classmethod
+    def get_school_name(cls):
+        return cls.school_name
+
+student1 = School("Shiva")
+print(School.get_school_name())  # ✅ works without creating object
+
+
+# @staticmethod
+# Used when the method doesn’t need self or cls. It’s just a utility/helper function inside the class.
+
+class MathHelper:
+
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+print(MathHelper.add(5, 3))  # ✅ Outputs 8
+
+
+# practices
+
+class Calculator:
+    @staticmethod
+    def multiply(x, y):
+        return x * y
+
+    @classmethod
+    def welcome(cls):
+        print("Welcome to the Calculator Class!")
+
+# Call both methods
+Calculator.welcome()
+result = Calculator.multiply(6, 7)
+print("The result is:", result)
+
