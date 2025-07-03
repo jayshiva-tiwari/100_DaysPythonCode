@@ -24,9 +24,8 @@ obj2 = ChildClass()
 obj1.method_name()   # 👉 Outputs: This is the parent class method.
 obj2.method_name()   # 👉 Outputs: This is the child class method.
 
-
+# 
 # Multiple classes with same method name
-
 class Dog:
     def sound(self):
         print("Bark! 🐶")
@@ -44,3 +43,31 @@ animals = [Dog(), Cat(), Cow()]
 
 for animal in animals:
     animal.sound()   # Same method call, different output
+
+
+# Create a Vehicle base class and child classes like Car, Bike, Bus.
+# Each class should override a method like transport_mode().
+
+class Vehicle:
+    def transport_mode(self):
+        print("This is a vehicle.")
+
+class car(Vehicle):
+    def transport_mode(self):
+        print("This is a car.")
+    
+class bike(Vehicle):
+    def transport_mode(self):
+        print("This is a bike.")
+
+class bus(Vehicle):
+    def transport_mode(self):
+        print("This is a bus.")
+
+car = car()
+bike = bike()
+bus = bus()
+
+car.transport_mode()
+bike.transport_mode()
+bus.transport_mode()
