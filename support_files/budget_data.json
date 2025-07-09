@@ -1,0 +1,9 @@
+{
+    "transactions": [
+        {
+            "amount": 20000.0,
+            "description": "par manth income",
+            "type": "income"
+        }
+    ]
+}
