@@ -1,6 +1,6 @@
 # Day 36 of python with programming paglu🎀
 
-# What You'll Learn:
+# What we'll Learn:
 # Access folders using os
 
 # Move files with shutil
