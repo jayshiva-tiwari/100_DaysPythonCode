@@ -16,8 +16,8 @@ today = datetime.now().strftime("%m-%d")
 # Load birthday data from CSV
 def get_birthdays_today():
     birthdays_today = []
-    with open("birthdays.csv", newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
+    with open("birthdays.csv", newline='') as csv_file:
+        reader = csv.DictReader(csv_file)
         for row in reader:
             bday = datetime.strptime(row['birthday'], "%Y-%m-%d").strftime("%m-%d")
             if bday == today:
@@ -28,13 +28,13 @@ def get_birthdays_today():
 def send_birthday_email(to_email, to_name):
     msg = EmailMessage()
     msg['Subject'] = "🎉 Happy Birthday!"
-    msg['From'] = "your_email@gmail.com"
+    msg['From'] = "shivatiwari7171@gmail.com"
     msg['To'] = to_email
     msg.set_content(f"Hey {to_name},\n\nWishing you a day filled with happiness and a year filled with joy. Happy Birthday! 🎂🥳")
 
     try:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-            smtp.login("your_email@gmail.com", "your_app_password")
+            smtp.login("shivatiwari7171@gmail.com", "your_app_password")
             smtp.send_message(msg)
             print(f"✅ Sent birthday wish to {to_name}")
     except Exception as e:
