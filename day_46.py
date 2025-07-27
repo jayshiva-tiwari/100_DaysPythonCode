@@ -14,9 +14,7 @@
 # A small window-based calculator with:
 
 # Number buttons (0–9)
-
 # Operators (+, -, *, /)
-
 # A display area to show inputs and results
 
 # Clear and = buttons
