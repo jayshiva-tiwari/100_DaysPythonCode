@@ -170,7 +170,7 @@ Let’s code our way to mastery! 💻🔥
 ## 🏁 PHASE 6: Final Challenge + Portfolio (Day 81–100)
 > **Goal**: Complete a final big project, and publish your journey.
 
-| Day     | Topic                      | Focus                                   |
+| Day     | Topic                      | Focus                                    |
 |---------|----------------------------|------------------------------------------|
 | 81–85   | Final Project Build Start  | Choose topic (Flask, Automation, Data)   |
 | 86–90   | Continue Final Project     | Add advanced features                    |
@@ -183,7 +183,7 @@ Let’s code our way to mastery! 💻🔥
 | 97      | Optional Interview Prep    | Python + Projects ready                  |
 | 98      | Certificate Creation       | Canva/Markdown style                     |
 | 99      | Journey Reflection         | Post on all platforms                    |
-| 100     | 🎉 Celebrate!              | You're officially a Python Dev! 🎓🎊       |
+| 100     | 🎉 Celebrate!             | You're officially a Python Dev! 🎓🎊    |
 
 ---
 
