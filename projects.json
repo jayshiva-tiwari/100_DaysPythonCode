@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Image Enhancer",
+    "description": "Enhance photos using AI",
+    "tech": ["React", "Flask", "Tailwind", "API"]
+  },
+  {
+    "id": 2,
+    "title": "Markdown Blog App",
+    "description": "A blog system using markdown files",
+    "tech": ["Flask", "HTML", "Bootstrap", "React"]
+  },
+  {
+  "id": 3,
+  "title": "AI Resume Scanner",
+  "description": "Scans resumes using OpenAI",
+  "tech": ["Flask", "Python", "AI"]
+}
+]
