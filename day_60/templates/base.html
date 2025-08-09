@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title or "Notes App" }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <a href="/" class="font-bold text-xl">📝 Notes App</a>
+        {% if session.username %}
+            <div>
+                <span class="mr-4">Hi, {{ session.username }}</span>
+                <a href="/logout" class="bg-red-500 px-3 py-1 rounded">Logout</a>
+            </div>
+        {% else %}
+            <div>
+                <a href="/login" class="px-3">Login</a>
+                <a href="/register" class="bg-green-500 px-3 py-1 rounded">Register</a>
+            </div>
+        {% endif %}
+    </nav>
+
+    <main class="container mx-auto mt-6 px-4">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

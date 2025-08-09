@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+{% block content %}
+<div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-xl font-bold mb-4">🔐 Login</h2>
+    <form method="POST">
+        <input name="username" placeholder="Username" class="border p-2 w-full mb-2" required>
+        <input name="password" type="password" placeholder="Password" class="border p-2 w-full mb-2" required>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded w-full">Login</button>
+    </form>
+    <p class="mt-2 text-sm text-gray-500">No account? <a href="/register" class="text-blue-600">Register</a></p>
+</div>
+{% endblock %}
+
+</body>
+</html>

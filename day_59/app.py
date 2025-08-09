@@ -10,7 +10,7 @@
 # ✅ Show notes only for logged-in users
 
 def init_db():
-    conn = sqlite3.connect('notes.db')
+    conn = sqlite3.connect('notes.db') # type: ignore
     c = conn.cursor()
 
     # Create notes table
@@ -36,6 +36,7 @@ def init_db():
     conn.close()
 
 
+import sqlite3
 from flask import Flask, render_template, request, redirect, session, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 
